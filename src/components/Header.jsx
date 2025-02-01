@@ -9,7 +9,7 @@ const Header = () => {
   const { languageChange, toggleTheme, language, themeName, darkMode } =
     useContext(UserContext);
   return (
-    <div className="flex flex-row justify-around">
+    <div className="flex flex-row justify-around ">
       <div>
         <h1 className="text-4xl font-bold">Feyza Türkay</h1>
       </div>
@@ -26,17 +26,24 @@ const Header = () => {
               checked={darkMode}
               onChange={toggleTheme}
               sx={{
+                width: 55,
+                height: 24,
+                padding: 0,
+                display: "flex",
                 "& .MuiSwitch-thumb": {
-                  backgroundColor: darkMode ? "#8F88FF" : "#FFE86E", // Thumb (circle) color change
+                  backgroundColor: /*darkMode ? "#8F88FF" :*/ "#FFE86E", // Thumb (circle) color change
                   width: 15, // Thumb (circle) width
                   height: 15, // Thumb (circle) height
-                  transform: "translateX(9px)", // Slightly shift the thumb for better alignment
-                  transform: "translateY(5px)", // Slightly shift the thumb for better alignment
+                  //transform: "translateX(15px)", // Slightly shift the thumb for better alignment
+                  transform: "translateY(-7px)", // Slightly shift the thumb for better alignment
                 },
+                // "& .MuiSwitch-switchBase.Mui-checked": {
+                //   transform: "translateY(2px)",
+                // },
                 "& .MuiSwitch-track": {
-                  backgroundColor: darkMode ? "#FFE86E" : "#8F88FF", // Track (main background) color change
+                  backgroundColor: darkMode ? "red" : "#8F88FF", // Track (main background) color change
                   borderRadius: "9999px", // Keep the track rounded
-                  width: 50, // Thumb (circle) width
+                  width: 60, // Thumb (circle) width
                   height: 20, // Thumb (circle) height
                 },
               }}
