@@ -7,8 +7,10 @@ const Header = () => {
   const { languageChange, toggleTheme, language, themeName } =
     useContext(UserContext);
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold">Feyza Türkay</h1>
+    <div>
+      <div>
+        <h1 className="text-4xl font-bold">Feyza Türkay</h1>
+      </div>
       <div>
         <label>
           <input onClick={toggleTheme} />
