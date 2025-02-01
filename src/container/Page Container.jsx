@@ -1,6 +1,5 @@
-import React from "react";
 import React, { useContext } from "react";
-import { UserContext } from "./contexts/UserContext.jsx";
+import { UserContext } from "../contexts/UserContext";
 
 export const PageContainer = ({ children }) => {
   const { darkMode, language } = useContext(UserContext);
