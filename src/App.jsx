@@ -1,14 +1,24 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-
+import React, { useContext } from "react";
+import { UserContext } from "./contexts/UserContext.jsx";
+import Hero from "./components/Hero.jsx";
+import Skills from "./components/Skills.jsx";
+import Projects from "./components/Projects.jsx";
+import Profile from "./components/Profile.jsx";
+import Footer from "./components/Footer.jsx";
+import Header from "./components/Header.jsx";
+import { PageContainer } from "./container/Page Container.jsx";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+      <PageContainer>
+        <Header />
+        <Hero />
+        <Skills />
+        <Profile />
+        <Projects />
+        <Footer />
+      </PageContainer>
     </>
   );
 }
