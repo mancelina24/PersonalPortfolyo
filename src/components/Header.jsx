@@ -8,17 +8,17 @@ const Header = () => {
   const { languageChange, toggleTheme, language, themeName } =
     useContext(UserContext);
   return (
-    <div>
+    <div className="flex flex-row justify-around">
       <div>
         <h1 className="text-4xl font-bold">Feyza Türkay</h1>
       </div>
-      <div>
+      <div className="flex flex-row">
         <label onClick={languageChange}>
           {language === TURKCE
             ? languageEng.tr + languageEng.ekTr
             : languageTr.ekEng + languageTr.eng}
         </label>
-        <RxSwitch size={42} />
+        <RxSwitch size={42} className="cursor-pointer" />
         <label>
           <input onClick={toggleTheme} />
 
