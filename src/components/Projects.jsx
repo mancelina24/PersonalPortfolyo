@@ -1,15 +1,27 @@
 import React, { useContext } from "react";
 import { UserContext } from "../contexts/UserContext.jsx";
-
+import Footer from "./Footer.jsx";
+import Project from "./Project.jsx";
 const Projects = () => {
   return (
-    <div>
-      <h1>Project</h1>
+    <article className="w-[1440px] h-[1315px] top-[1774px] left-[5px]">
       <div>
-        <div>Random Jokes</div>
-        <div>Are you Bored</div>{" "}
+        <div>
+          {" "}
+          <h1>Projects</h1>
+        </div>
+        <div>
+          <div>
+            <Project />
+          </div>
+          <div>
+            {" "}
+            <Project />
+          </div>
+        </div>
       </div>
-    </div>
+      <Footer />
+    </article>
   );
 };
 

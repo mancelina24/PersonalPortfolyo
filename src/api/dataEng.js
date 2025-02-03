@@ -1,8 +1,3 @@
-import codepen from "../assets/footer/codepen.png";
-import instagram from "../assets/footer/instagram.png";
-import mail from "../assets/footer/mail.png";
-import twitter from "../assets/footer/twitter.png";
-
 import Figma from "../assets/skills/Figma.png";
 import js from "../assets/skills/js.png";
 import node from "../assets/skills/node.png";
@@ -98,10 +93,12 @@ export const projectsEng = {
   description: [
     {
       id: 1,
-      link: "https://github.com/",
-      live: "...",
-      heading: "Technological Pizza",
+      title: "Pizza Project",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+      github: "https://github.com/",
+      goto: "...",
+      heading: "Technological Pizza",
+
       teknologies: [
         "React",
         "Cypress",
@@ -113,11 +110,11 @@ export const projectsEng = {
     },
     {
       id: 2,
-      link: "https://github.com",
-      live: "https://dinamik-menu./",
-      heading: "Dinamik Menu",
+      title: "Login Form",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-      teknologies: ["React", "Css", "Vercel", "Axios", "Router"],
+      github: "https://github.com",
+      goto: "https://dinamik-menu./",
+      teknologies: ["React", "Axios", "Router", "Css", "Vercel"],
     },
   ],
 };
