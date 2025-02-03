@@ -25,18 +25,26 @@ export const toggleLanguageTr = {
   trLight: "AYDINLIK MOD",
 };
 
-export const hero = {
-  heroTitle: "Ben bir Frontend Geliştiriciyim...",
+export const heroTr = {
+  heroTitle: "Merhaba 👋",
   heroDesc:
-    "...ve harika kullanıcı deneyimleri sunan, sağlam ve ölçeklenebilir frontend ürünleri geliştirmeyi seven biriyim.",
+    "Ben Feyza. Yüksek kaliteli ve ölçeklenebilir frontend ürünler üretebilirim. Hadi tanışalım! ",
+  heroDetail1: "Şu anda",
+  heroDetail11: "Freelance",
+  heroDetail12: "olarak",
+  heroDetail13: "UX, UI, & Web Design",
+  heroDetail14: "Projesinde çalışıyorum.",
+
+  heroDetail2: "Beni ekibinize katılmaya davet edin",
+  heroDetail3: "fturkay.2107@gmail.com",
   githubLink: "https://github.com/mancelina24",
   linkedinLink: "https://www.linkedin.com/in/feyza-trky/",
-  img: { imgGithub: Github, imgLinkedin: Linkedin, imgResim: resim },
+  img: resim,
 };
 
 export const skills = {
   title: "Yetenekler",
-  description: [
+  desc: [
     {
       id: 1,
       name: "JAVASCRIPT",
@@ -71,7 +79,7 @@ export const skills = {
   ],
 };
 
-export const profile = {
+export const profileTr = {
   profile: "Profil",
   basicInfo: "Temel Bilgiler",
   birthday: "Doğum Günü",
@@ -89,7 +97,7 @@ export const profile = {
   aboutText1: "dfghdfhfgh gdfgdfg",
   aboutText2: "dfghdfhfgh gdfgdfg",
 };
-export const projects = {
+export const projectsTr = {
   title: "Projeler",
   description: [
     {
@@ -120,15 +128,7 @@ export const projects = {
   ],
 };
 
-export const footer = {
-  heading1: "Bana bir mesaj gönderin!",
-  heading2:
-    "Bir sorunuz veya öneriniz mi var ya da sadece merhaba demek mi istiyorsunuz? Hadi yazın.",
-  email: "fturkay.2107@gmail.com",
-  img: {
-    imgTwitter: twitter,
-    imgCodepen: codepen,
-    imgMail: mail,
-    imgInstagram: instagram,
-  },
+export const footerTr = {
+  text1: "Hadi yeni Projeni",
+  text2: "birlikte yapalım!",
 };

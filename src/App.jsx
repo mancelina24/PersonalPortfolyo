@@ -1,6 +1,4 @@
 import "./App.css";
-import React, { useContext } from "react";
-import { UserContext } from "./contexts/UserContext.jsx";
 import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
@@ -12,12 +10,13 @@ function App() {
   return (
     <>
       <PageContainer>
-        <Header />
-        <Hero />
-        <Skills />
-        <Profile />
-        <Projects />
-        <Footer />
+        <div className="flex flex-col">
+          <Hero />
+          <Skills />
+          <Profile />
+          <Projects />
+          <Footer />
+        </div>
       </PageContainer>
     </>
   );

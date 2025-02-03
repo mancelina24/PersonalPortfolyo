@@ -29,6 +29,10 @@ export default function UserContextProvider({ children }) {
     setLanguage(newLanguage);
     setThemeName(updateThemeName(darkMode, newLanguage));
   };
+
+  const languageClass = language === TURKCE ? "lang-turkish" : "lang-english";
+  const darkModeClass = darkMode ? "dark" : "";
+
   useEffect(() => {
     setThemeName(updateThemeName(darkMode, language));
   }, [darkMode, language]);
@@ -41,6 +45,8 @@ export default function UserContextProvider({ children }) {
         darkMode,
         language,
         themeName,
+        darkModeClass,
+        languageClass,
       }}
     >
       {children}

@@ -25,18 +25,25 @@ export const toggleLanguageEng = {
   engLight: "LIGHT MODE",
 };
 
-export const hero = {
-  heroTitle: "I am a Frontend Developer...",
+export const heroEng = {
+  heroTitle: "Hi 👋",
   heroDesc:
-    "...who likes to craft solid and scalable frontend products with great user experiences.",
+    "I’m Feyza. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!",
+  heroDetail1: "Currently",
+  heroDetail11: " Freelancing",
+  heroDetail12: " for ",
+  heroDetail13: "UX, UI, & Web Design ",
+  heroDetail14: "Project.",
+  heroDetail2: "Invite me to join your team",
+  heroDetail3: "fturkay.2107@gmail.com",
   githubLink: "https://github.com/mancelina24",
   linkedinLink: "https://www.linkedin.com/in/feyza-trky/",
-  img: { imgGithub: Github, imgLinkedin: Linkedin, imgResim: resim },
+  img: resim,
 };
 
 export const skills = {
   title: "Skills",
-  description: [
+  desc: [
     {
       id: 1,
       name: "JAVASCRIPT",
@@ -71,7 +78,7 @@ export const skills = {
   ],
 };
 
-export const profile = {
+export const profileEng = {
   profile: "Profile",
   basicInfo: "Basic information",
   birthday: "Birthday",
@@ -88,7 +95,7 @@ export const profile = {
   aboutText1: "dfgdfgdfhdfhfhfghlşfjlhjfşhjfhkfjşhjfşhfşhjfşlhjfşh",
   aboutText2: "dfgdfgdfhdfhfhfghlşfjlhjfşhjfhkfjşhjfşhfşhjfşlhjfşh",
 };
-export const projects = {
+export const projectsEng = {
   title: "Projects",
   description: [
     {
@@ -117,14 +124,7 @@ export const projects = {
   ],
 };
 
-export const footer = {
-  heading1: "Send me a message!",
-  heading2: "Got a question or proposal, or just want to say hello? Go ahead.",
-  email: "fturkay.2107@gmail.com",
-  img: {
-    imgTwitter: twitter,
-    imgCodepen: codepen,
-    imgMail: mail,
-    imgInstagram: instagram,
-  },
+export const footerEng = {
+  text1: "Let's work Together on",
+  text2: "your next Product.",
 };
