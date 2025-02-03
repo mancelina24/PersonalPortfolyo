@@ -10,8 +10,6 @@ import react from "../assets/skills/react.png";
 import redux from "../assets/skills/redux.png";
 import vscode from "../assets/skills/vscode.png";
 
-import Github from "../assets/hero/Github.png";
-import Linkedin from "../assets/hero/Linkedin.png";
 import resim from "../assets/hero/resim.png";
 
 export const ENGLISH = "english";

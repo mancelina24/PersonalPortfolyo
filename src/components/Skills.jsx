@@ -8,12 +8,17 @@ const Skills = () => {
   return (
     <div
       className={`w-[1440px] h-[497px] top-[731px] flex justify-center flex-col gap-8 ${
-        darkMode ? "dark:bg-[#484148] dark:text-white" : "bg-white text-black"
+        darkMode
+          ? "dark:bg-[#484148] dark:text-[#f4f4f4]"
+          : "bg-white text-black"
       }`}
     >
-      <div className="w-[942px] h-[280px] top-[818px] left-[259px]">
-        <div className="w-[122px] h-[58px] left-[658px] top-[818px] text-[48px] leading-[58.09px] tracking-[1%] font-inter ">
-          {language === TURKCE ? "Skills" : "Yetenekler"}
+      <div className="w-[942px] h-[280px] top-[818px] left-[259px] ">
+        <div className="w-[122px] h-[58px] top-[818px] left-[658px]">
+          <p className="text-[48px] leading-[58.09px] tracking-[1%] font-inter font-medium flex justify-center text-center">
+            {" "}
+            {language === TURKCE ? "Skills" : "Yetenekler"}
+          </p>
         </div>
         <div className="flex justify-center flex-row">
           {skills.desc.map((skill) => (

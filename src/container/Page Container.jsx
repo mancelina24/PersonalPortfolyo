@@ -5,9 +5,9 @@ export const PageContainer = ({ children }) => {
   const { darkMode, languageClass, darkModeClass } = useContext(UserContext);
 
   return (
-    <div className={`${darkModeClass} ${languageClass}`}>
+    <div className={`flex justify-center ${darkModeClass} ${languageClass}`}>
       <div
-        className={`w-[1440px] h-[3094px] left-[2541px] top-[-1644px] bg-white ${
+        className={`w-[1440px] h-[3094px] left-[-720px] top-[-1547px] bg-white ${
           darkMode ? "dark:bg-gray-900 dark:text-white" : "bg-white text-black"
         }`}
       >
