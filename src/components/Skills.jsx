@@ -6,38 +6,37 @@ const Skills = () => {
   const { language, darkMode, languageClass, darkModeClass } =
     useContext(UserContext);
   return (
-    <div
-      className={`w-[1440px] h-[497px] top-[731px] flex justify-center flex-col gap-8 ${
+    <section
+      className={`w-[1440px] h-[497px] top-[731px] flex flex-col justify-center items-center gap-8 ${
         darkMode
           ? "dark:bg-[#484148] dark:text-[#f4f4f4]"
           : "bg-white text-black"
       }`}
     >
-      <div className="w-[942px] h-[280px] top-[818px] left-[259px] ">
-        <div className="w-[122px] h-[58px] top-[818px] left-[658px]">
-          <p className="text-[48px] leading-[58.09px] tracking-[1%] font-inter font-medium ">
-            {" "}
-            {language === TURKCE ? "Skills" : "Yetenekler"}
-          </p>
-        </div>
-        <div className="flex justify-center flex-row">
-          {skills.desc.map((skill) => (
-            <div key={skill.id} className="flex items-center px-4 py-2">
-              <div className="flex justify-center flex-col items-center gap-2 font-inter">
-                <img src={skill.img} className="w-12 h-12" />
-                <p
-                  className={`${
-                    darkMode ? "dark:text-[#d9d9d9]" : "text-[#777777]"
-                  }`}
-                >
-                  {skill.name}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div>
+        <p className="text-5xl leading-[58.09px] tracking-[1%] font-inter font-medium text-center">
+          {" "}
+          {language === TURKCE ? "Skills" : "Yetenekler"}
+        </p>
       </div>
-    </div>
+      <div className="flex flex-row gap-[35px]">
+        {skills.desc.map((skill) => (
+          <div
+            key={skill.id}
+            className="flex flex-col items-center justify-center px-4 py-2"
+          >
+            <img src={skill.img} className="w-20 h-20 mb-2" />
+            <p
+              className={`font-medium text-center text-2xl ${
+                darkMode ? "dark:text-[#d9d9d9]" : "text-[#777777]"
+              }`}
+            >
+              {skill.name}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
