@@ -14,15 +14,15 @@ const Projects = () => {
     language === TURKCE ? projectsEng.description : projectsTr.description;
 
   return (
-    <div
+    <section
       className={`w-[1440px] h-[1315px] top-[1774px] flex flex-col justify-center items-center my-0 py-0 ${
         darkMode
           ? "dark:bg-[#484148] dark:text-[#f4f4f4]"
           : "bg-white text-black"
       }`}
     >
-      <div className="w-[1064px] h-auto top-[1300px] flex flex-col justify-center items-center ">
-        <h1 className="w-[144px] h-[44px] top-[1856px]  font-inter font-medium mt-1 text-[36px] ">
+      <div className="w-[1064px] h-auto flex flex-col justify-center items-center ">
+        <h1 className="w-[144px]  mt-1  font-inter font-medium text-[36px] ">
           Projects
         </h1>
 
@@ -60,7 +60,7 @@ const Projects = () => {
           ))}
         </Card>
       </div>
-    </div>
+    </section>
   );
 };
 
