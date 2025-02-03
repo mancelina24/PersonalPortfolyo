@@ -14,12 +14,12 @@ const Skills = () => {
       }`}
     >
       <div>
-        <p className="text-5xl leading-[58.09px] tracking-[1%] font-inter font-medium text-center">
+        <p className="text-5xl leading-[58.09px] tracking-[1%] font-inter font-medium text-center ">
           {" "}
           {language === TURKCE ? "Skills" : "Yetenekler"}
         </p>
       </div>
-      <div className="flex flex-row gap-[35px]">
+      <figure className="flex flex-row gap-[35px]">
         {skills.desc.map((skill) => (
           <div
             key={skill.id}
@@ -35,7 +35,7 @@ const Skills = () => {
             </p>
           </div>
         ))}
-      </div>
+      </figure>
     </section>
   );
 };

@@ -11,7 +11,7 @@ const Header = () => {
   const { languageChange, toggleTheme, language, themeName, darkMode } =
     useContext(UserContext);
   return (
-    <div className="flex flex-row justify-end items-center bg-none">
+    <header className="flex flex-row justify-end items-center bg-none">
       <div className="flex items-center cursor-pointer">
         <label>{themeName}</label>
         <Switch
@@ -49,7 +49,7 @@ const Header = () => {
             : languageTr.ekEng + languageTr.eng}
         </label>
       </div>
-    </div>
+    </header>
   );
 };
 

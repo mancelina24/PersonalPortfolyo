@@ -8,8 +8,8 @@ const Footer = () => {
     useContext(UserContext);
 
   return (
-    <div>
-      <div
+    <footer>
+      <details
         className="relative w-[541.53px] h-[126px] left-[341px] top-[2784px] dark:text-white sm:w-full sm:h-auto sm:left-0 
   text-[#0A0A14] text-[42px] leading-[63px] tracking-[1%] font-inter font-medium text-right 
   sm:text-[32px] sm:leading-[48px] sm:tracking-[0.5%] md:text-[36px] md:leading-[54px] md:tracking-[0.75%] 
@@ -19,8 +19,8 @@ const Footer = () => {
 
         <br />
         {language === TURKCE ? footerEng.text2 : footerTr.text2}
-      </div>
-      <div>
+      </details>
+      <details>
         <a
           className="text-[#1769FF] text-2xl leading-[36px] font-inter hover:underline cursor-pointer
     sm:text-[20px] sm:leading-[30px] 
@@ -65,8 +65,8 @@ const Footer = () => {
         >
           Email
         </a>
-      </div>
-    </div>
+      </details>
+    </footer>
   );
 };
 
