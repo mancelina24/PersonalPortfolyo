@@ -9,50 +9,58 @@ import { projectsEng } from "../api/dataEng";
 import { TURKCE, projectsTr } from "../api/dataTr";
 
 const Projects = () => {
-  const { language } = useContext(UserContext);
+  const { language, darkMode } = useContext(UserContext);
   const selectedProjects =
     language === TURKCE ? projectsEng.description : projectsTr.description;
 
   return (
-    <article className="w-[1440px] h-[1315px] top-[1774px] flex flex-col justify-center items-center">
-      <div className="w-[1064px] h-[792px] top-[1856px] flex flex-col justify-center items-center">
-        <div className="w-[144px] h-[44px] top-[1856px] ">
-          {" "}
-          <h1>Projects</h1>
-        </div>
-        <div className="w-[500px] h-[712px] top-[1936px] flex flex-row justify-center items-center  ">
-          <Card>
-            {selectedProjects.map((desc) => (
-              <Card.Body key={desc.id}>
-                <Card.Title>{desc.title}</Card.Title>
-                <Card.Text>{desc.desc}</Card.Text>
+    <div
+      className={`w-[1440px] h-[1315px] top-[1774px] flex flex-col justify-center items-center my-0 py-0 ${
+        darkMode
+          ? "dark:bg-[#484148] dark:text-[#f4f4f4]"
+          : "bg-white text-black"
+      }`}
+    >
+      <div className="w-[1064px] h-auto top-[1300px] flex flex-col justify-center items-center ">
+        <h1 className="w-[144px] h-[44px] top-[1856px]  font-inter font-medium mt-1 text-[36px] ">
+          Projects
+        </h1>
 
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {desc.teknologies.map((tech, index) => (
-                    <Button
-                      key={index}
-                      variant="outline-primary"
-                      className="py-2 px-4"
-                      type="button"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      {tech}
-                    </Button>
-                  ))}
-                </div>
+        <Card className="w-45% h-auto top-[1936px] flex flex-row justify-center gap-10 ">
+          {selectedProjects.map((desc) => (
+            <Card.Body key={desc.id}>
+              <Card.Title>{desc.title}</Card.Title>
+              <Card.Text>{desc.desc}</Card.Text>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {desc.teknologies.map((tech, index) => (
+                  <Button
+                    key={index}
+                    variant="outline-primary"
+                    className="w-[89px] h-[32] py-2 px-4 border border-blue-500 text-[#FFFFFF] hover:bg-blue-500 hover:text-white transition-all duration-300 rounded-[76px] dark:"
+                    type="button"
+                    onClick={() => console.log(`${tech} button clicked`)}
+                    style={{ display: "inline-block", cursor: "pointer" }}
+                  >
+                    {tech}
+                  </Button>
+                ))}
+              </div>
+              <div className="flex justify-between">
+                {" "}
+                <Card.Link href="#">Card Link</Card.Link>
+                <Card.Link href="#">Another Link</Card.Link>
+              </div>
 
-                <Card.Img
-                  variant="top"
-                  src={desc.img}
-                  className="w-md h-md mb-2"
-                />
-              </Card.Body>
-            ))}
-          </Card>
-        </div>
+              <Card.Img
+                variant="top"
+                src={desc.img}
+                className="w-full h-[200px] object-cover mb-2"
+              />
+            </Card.Body>
+          ))}
+        </Card>
       </div>
-      <Footer />
-    </article>
+    </div>
   );
 };
 
