@@ -1,8 +1,3 @@
-import codepen from "../assets/footer/codepen.png";
-import instagram from "../assets/footer/instagram.png";
-import mail from "../assets/footer/mail.png";
-import twitter from "../assets/footer/twitter.png";
-
 import Figma from "../assets/skills/Figma.png";
 import js from "../assets/skills/js.png";
 import node from "../assets/skills/node.png";
@@ -11,6 +6,8 @@ import redux from "../assets/skills/redux.png";
 import vscode from "../assets/skills/vscode.png";
 
 import resim from "../assets/hero/resim.png";
+import r1 from "../assets/projects/r1.png";
+import r2 from "../assets/projects/r2.png";
 
 export const TURKCE = "turkish";
 
@@ -100,28 +97,23 @@ export const projectsTr = {
   description: [
     {
       id: 1,
-      src: "",
-      link: "https://gite",
-      live: "https://p/",
-      heading: "Teknolojik Pizza",
-      desc: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam",
-      teknologies: [
-        "React",
-        "Cypress",
-        "Vercel",
-        "Axios",
-        "Toastify",
-        "Router",
-      ],
+      title: "Pizza Projesi",
+      desc: "Türkçe Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+      github: "https://github.com/",
+      goto: "...",
+      heading: "Technological Pizza",
+
+      teknologies: ["React", "Router", "Vercel", "Axios"],
+      img: r1,
     },
     {
       id: 2,
-      src: "",
-      link: "https://gith",
-      live: "https://d/",
-      heading: "Dinamik Menü",
-      desc: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam",
-      teknologies: ["React", "CSS", "Vercel", "Axios", "Router"],
+      title: "Login olma Formu",
+      desc: "Türkçe Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+      github: "https://github.com",
+      goto: "https:///",
+      teknologies: ["React", "Axios", "Router", "HTML", "Vercel"],
+      img: r2,
     },
   ],
 };

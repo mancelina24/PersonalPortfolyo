@@ -6,7 +6,8 @@ import redux from "../assets/skills/redux.png";
 import vscode from "../assets/skills/vscode.png";
 
 import resim from "../assets/hero/resim.png";
-
+import r1 from "../assets/projects/r1.png";
+import r2 from "../assets/projects/r2.png";
 export const ENGLISH = "english";
 
 export const languageEng = {
@@ -107,6 +108,7 @@ export const projectsEng = {
         "Toastify",
         "Router",
       ],
+      img: r1,
     },
     {
       id: 2,
@@ -115,6 +117,7 @@ export const projectsEng = {
       github: "https://github.com",
       goto: "https://dinamik-menu./",
       teknologies: ["React", "Axios", "Router", "Css", "Vercel"],
+      img: r2,
     },
   ],
 };
