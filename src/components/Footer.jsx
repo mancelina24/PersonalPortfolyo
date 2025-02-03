@@ -4,23 +4,20 @@ import { footerEng } from "../api/dataEng.js";
 import { TURKCE, footerTr } from "../api/dataTr.js";
 
 const Footer = () => {
-  const { language, darkMode, languageClass, darkModeClass } =
-    useContext(UserContext);
+  const { language } = useContext(UserContext);
 
   return (
-    <footer>
+    <footer className="w-[758px] h-[137px] left-[341px] top-[2777px] flex flex-row justify-center items-center gap-10">
       <div
-        className="relative w-[541.53px] h-[126px] left-[341px] top-[2784px] dark:text-white sm:w-full sm:h-auto sm:left-0 
+        className="dark:text-white  
   text-[#0A0A14] text-[42px] leading-[63px] tracking-[1%] font-inter font-medium text-right 
-  sm:text-[32px] sm:leading-[48px] sm:tracking-[0.5%] md:text-[36px] md:leading-[54px] md:tracking-[0.75%] 
-  lg:text-[40px] lg:leading-[60px] lg:tracking-[1%] xl:text-[42px] xl:leading-[63px] xl:tracking-[1%] "
+ "
       >
-        {language === TURKCE ? footerEng.text1 : footerTr.text1}
+        <p>{language === TURKCE ? footerEng.text1 : footerTr.text1}</p>
 
-        <br />
-        {language === TURKCE ? footerEng.text2 : footerTr.text2}
+        <p>{language === TURKCE ? footerEng.text2 : footerTr.text2}</p>
       </div>
-      <div>
+      <div className="flex flex-col justify-center items-center gap-1">
         <a
           className="text-[#1769FF] text-2xl leading-[36px] font-inter hover:underline cursor-pointer
     sm:text-[20px] sm:leading-[30px] 
