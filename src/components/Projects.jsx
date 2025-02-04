@@ -15,23 +15,24 @@ const Projects = () => {
 
   return (
     <section
-      className={`w-[1440px] h-[1315px] top-[1774px] flex flex-col justify-center items-center my-0 py-0 ${
+      className={`h-[1315px] flex flex-col justify-center  ${
         darkMode
           ? "dark:bg-[#484148] dark:text-[#f4f4f4]"
           : "bg-white text-black"
       }`}
     >
-      <div className="w-[1064px] h-auto flex flex-col justify-center items-center ">
-        <h1 className="w-[144px]  mt-1  font-inter font-medium text-[36px] ">
-          Projects
-        </h1>
-
-        <Card className="w-45% h-auto top-[1936px] flex flex-row justify-center gap-10 ">
+      <div className="flex flex-col justify-center items-center ">
+        <div>
+          <h1 className="mt-1  font-inter font-medium text-[36px] ">
+            Projects
+          </h1>
+        </div>
+        <Card className="">
           {selectedProjects.map((desc) => (
-            <Card.Body key={desc.id}>
+            <Card.Body key={desc.id} className="">
               <Card.Title>{desc.title}</Card.Title>
               <Card.Text>{desc.desc}</Card.Text>
-              <div className="flex flex-wrap gap-2 mt-4">
+              <div>
                 {desc.teknologies.map((tech, index) => (
                   <Button
                     key={index}
@@ -54,11 +55,14 @@ const Projects = () => {
               <Card.Img
                 variant="top"
                 src={desc.img}
-                className="w-full h-[200px] object-cover mb-2"
+                className="w-45% h-90 object-cover mb-2"
               />
             </Card.Body>
           ))}
         </Card>
+      </div>
+      <div>
+        <Footer />
       </div>
     </section>
   );

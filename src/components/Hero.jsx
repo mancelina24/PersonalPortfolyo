@@ -10,56 +10,54 @@ const Hero = () => {
   const { language, darkMode } = useContext(UserContext);
   return (
     <main
-      className={` relative w-[1440] h-[738px] flex justify-center flex-col ${
+      className={` relative h-[738px] flex justify-center flex-col ${
         darkMode
           ? "dark:bg-[#2A262B] dark:text-white"
           : "bg-[#f4f4f4] text-black"
       }`}
     >
-      <div className=" absolute flex flex-row w-[359px] h-[38px] top-[63px] left-[924px] ">
+      <div>
         <Header />
       </div>
-      <div className="w-[1107px] h-[493px] top-[151px] left-[162px] gap-8 flex flex-row justify-center">
-        <div className="gap-8 ">
-          <div className="w-[679px] h-[313px] top-[151px] left-[162px] font-inter ">
-            <div className="w-[200px] h-[36px] top-[151px] left-[174px]">
+      <div className="flex flex-row justify-center">
+        <div>
+          <div className="font-inter ">
+            <div>
               {" "}
               <p className=" font-inter text-[1.875rem]  leading-[2.27 rem] tracking-[10%]">
                 {language === TURKCE ? heroEng.heroTitle : heroTr.heroTitle}
               </p>
             </div>
             <br />
-            <div className="w-[666px] h-[256px] top-[208px] left-[175px] ">
+            <div className="w-[666px] h-[256px] ">
               <p className=" font-inter text-[2.625rem] leading-[4 rem] tracking-[1%]">
                 {" "}
                 {language === TURKCE ? heroEng.heroDesc : heroTr.heroDesc}
               </p>
             </div>
           </div>
-          <div className="flex flex-col w-[540px] h-[122.57px] top-[550.43px] left-[174px] gap-2 mt-15">
+          <div className="flex flex-col  gap-2 mt-5">
             <div className="flex flex-row gap-1">
-              <div
-                className={`w-[31px] h-[33.95px] top-[521.43px] left-[178px] `}
-              >
+              <div className={`w-10 h-10 `}>
                 <a
                   href={heroTr.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub size={25} />
+                  <FaGithub size={30} />
                 </a>
               </div>
-              <div className="w-[34px] h-[36.14px] top-[522.53px] left-[229px]">
+              <div>
                 <a
                   href={heroTr.linkedinLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin size={25} />
+                  <FaLinkedin size={30} />
                 </a>
               </div>
             </div>
-            <div className="w-[540px] h-[64px] top-[580px] left-[174px]">
+            <div className="">
               <p className="h-[18px]  font-inter font-normal text-[1.125] leading-[2rem] tracking-[5%]">
                 {language === TURKCE ? (
                   <>
@@ -109,7 +107,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className=" absolute w-[341px] h-[341px] top-[207px] left-[928px] rounded-sm">
+        <div className="my-20 rounded-sm">
           <img src={heroTr.img} />{" "}
         </div>
       </div>

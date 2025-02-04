@@ -7,7 +7,7 @@ const Skills = () => {
     useContext(UserContext);
   return (
     <section
-      className={`w-[1440px] h-[497px] top-[731px] flex flex-col justify-center items-center gap-8 ${
+      className={`h-[497px] flex flex-col justify-center items-center gap-8 ${
         darkMode
           ? "dark:bg-[#484148] dark:text-[#f4f4f4]"
           : "bg-white text-black"

@@ -5,7 +5,7 @@ const Profile = () => {
   const { language, darkMode } = useContext(UserContext);
   return (
     <article
-      className={`w-[1440px] h-[546px] top-[1228px] ${
+      className={`h-[546px] ${
         darkMode
           ? "dark:bg-[#2A262B] dark:text-white"
           : "bg-[#f4f4f4] text-black"

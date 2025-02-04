@@ -7,7 +7,7 @@ export const PageContainer = ({ children }) => {
   return (
     <div className={`flex justify-center ${darkModeClass} ${languageClass}`}>
       <div
-        className={`w-[1440px] h-[3094px] left-[-720px] top-[-1547px] bg-white ${
+        className={`w-full h-[3094px] bg-white ${
           darkMode ? "dark:bg-gray-900 dark:text-white" : "bg-white text-black"
         }`}
       >
