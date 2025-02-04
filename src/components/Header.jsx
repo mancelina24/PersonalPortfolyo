@@ -12,7 +12,7 @@ const Header = () => {
     useContext(UserContext);
   return (
     <header className="relative">
-      <div className=" absolute left-230 flex bg-none border-none sm:w-[100%]">
+      <div className=" absolute bottom-2 left: md:bottom-0 md:left-230 flex bg-none border-none ">
         <div className="flex flex-row cursor-pointer pr-4 font-bold  ">
           <Switch
             {...label}

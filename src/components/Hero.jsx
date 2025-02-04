@@ -10,7 +10,7 @@ const Hero = () => {
   const { language, darkMode } = useContext(UserContext);
   return (
     <main
-      className={`h-[738px] flex justify-center flex-col ${
+      className={`h-[950px] md:h-[738px] flex justify-center flex-col ${
         darkMode
           ? "dark:bg-[#2A262B] dark:text-white"
           : "bg-[#f4f4f4] text-black"
@@ -19,22 +19,22 @@ const Hero = () => {
       <div>
         <Header />
       </div>
-      <div className="flex md:flex-row justify-center gap-20 ">
+      <div className="flex flex-col mt-4 ml-8 md:ml-0 md:mt-0 md:flex-row justify-center gap-20  ">
         <div>
-          <div className="font-inter ">
+          <div style={{ fontFamily: "Inter, sans-serif" }}>
             <div>
               {" "}
               <p
-                className=" font-inter text-[1.875rem]  leading-[2.27 rem] tracking-[10%]"
+                className=" text-[1.875rem] leading-[2.27 rem] tracking-[10%] "
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 {language === TURKCE ? heroEng.heroTitle : heroTr.heroTitle}
               </p>
             </div>
             <br />
-            <div className="w-[630px] ">
+            <div className="w-[90%] md:w-[630px] ">
               <p
-                className="text-[2.625rem] leading-[4 rem] tracking-[1%]"
+                className="md:text-[2.625rem] leading-[4 rem] tracking-[1%]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 {" "}
@@ -65,7 +65,7 @@ const Hero = () => {
             </div>
             <div className="">
               <p
-                className="h-[18px] font-normal text-[1.125] leading-[2rem] tracking-[5%]"
+                className="h-[3rem] md:h-[18px] font-normal text-[1.125] leading-[2rem] tracking-[5%]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 {language === TURKCE ? (
@@ -116,8 +116,11 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="relative my-20 rounded-3xl  shadow-[-16px_-16px_2px_rgba(233,37,119,1)]">
-          <img src={heroTr.img} className="w-[341px] h-[341px] rounded-3xl " />{" "}
+        <div className=" my-1 ml-8 md:ml-0 md:my-20 rounded-3xl shadow-[-8px_-8px_1px_rgba(233,37,119,1)] md:shadow-[-16px_-16px_2px_rgba(233,37,119,1)]">
+          <img
+            src={heroTr.img}
+            className="w-[90%] h-[80%] ml-0.5 md:ml-0 md:w-[341px] md:h-[341px] rounded-3xl "
+          />{" "}
         </div>
       </div>
     </main>
