@@ -21,13 +21,13 @@ const Skills = () => {
           {language === TURKCE ? "Skills" : "Yetenekler"}
         </p>
       </div>
-      <figure className="grid grid-cols-2 gap:2 md:flex md:flex-row md:gap-[35px]">
+      <figure className="grid grid-cols-2 gap-2 md:flex md:flex-row lg:gap-[35px]">
         {skills.desc.map((skill) => (
           <div
             key={skill.id}
             className="flex flex-col items-center justify-center px-4 py-2"
           >
-            <img src={skill.img} className="w-20 h-20 mb-2" />
+            <img src={skill.img} className="w-10 h-10 lg:w-20 lg:h-20 mb-2" />
             <p
               className={`font-medium text-center text-2xl ${
                 darkMode ? "dark:text-[#d9d9d9]" : "text-[#777777]"

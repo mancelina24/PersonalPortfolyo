@@ -19,7 +19,7 @@ const Hero = () => {
       <div>
         <Header />
       </div>
-      <div className="flex flex-col mt-4 ml-8 md:ml-0 md:mt-0 md:flex-row justify-center gap-20  ">
+      <div className="flex flex-col mt-4 ml-8 lg:ml-0 md:mt-0 md:flex-row justify-center gap-20  ">
         <div>
           <div style={{ fontFamily: "Inter, sans-serif" }}>
             <div>
@@ -32,9 +32,9 @@ const Hero = () => {
               </p>
             </div>
             <br />
-            <div className="w-[90%] md:w-[630px] ">
+            <div className="w-[90%] lg:w-[630px] ">
               <p
-                className="md:text-[2.625rem] leading-[4 rem] tracking-[1%]"
+                className="lg:text-[2.625rem] leading-[4 rem] tracking-[1%]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 {" "}
@@ -42,7 +42,7 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col  gap-2 mt-5">
+          <div className="flex flex-col  gap-2 mt-10">
             <div className="flex flex-row gap-1">
               <div className={`w-10 h-10 `}>
                 <a
@@ -63,9 +63,9 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-            <div className="">
+            <div>
               <p
-                className="h-[3rem] md:h-[18px] font-normal text-[1.125] leading-[2rem] tracking-[5%]"
+                className="h-[3rem] lg:h-[18px] font-normal text-[1.125] leading-[2rem] tracking-[5%]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 {language === TURKCE ? (
@@ -104,6 +104,7 @@ const Hero = () => {
                 )}
               </p>
               <br />
+
               {language === TURKCE ? heroEng.heroDetail2 : heroTr.heroDetail2}
 
               <span className="mx-1"> </span>
@@ -116,10 +117,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className=" my-1 ml-8 md:ml-0 md:my-20 rounded-3xl shadow-[-8px_-8px_1px_rgba(233,37,119,1)] md:shadow-[-16px_-16px_2px_rgba(233,37,119,1)]">
+        <div className=" my-1 ml-3 mr-5 lg:ml-0 lg:mr-0 md:my-20 rounded-3xl shadow-[-8px_-8px_1px_rgba(233,37,119,1)] md:shadow-[-16px_-16px_2px_rgba(233,37,119,1)]">
           <img
             src={heroTr.img}
-            className="w-[90%] h-[80%] ml-0.5 md:ml-0 md:w-[341px] md:h-[341px] rounded-3xl "
+            className="w-[90%] h-[80%] ml-0.5 md:ml-0 md:w-[341px] lg:h-[341px] rounded-3xl "
           />{" "}
         </div>
       </div>

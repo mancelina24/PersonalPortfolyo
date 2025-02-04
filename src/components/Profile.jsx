@@ -19,8 +19,8 @@ const Profile = () => {
         {" "}
         {language === TURKCE ? profileEng.profile : profileTr.profile}
       </h1>
-      <div className="flex flex-col md:flex-row w-[90%] md:w-[70%] gap-15">
-        <div className="relative flex flex-col w-[90%] md:w-[50%] h-[18rem] rounded-2xl border-none bg-white shadow-[10px_10px_2px_rgba(82,82,82,0.6)] dark:bg-[#525252] dark:shadow-[10px_10px_2px_rgba(82,82,82,0.5)]">
+      <div className="flex flex-col md:flex-row w-full md:w-[95%] lg:w-[70%] gap-15">
+        <div className="relative flex flex-col w-[90%] ml-3 md:ml-0 md:w-[60%] lg:w-[50%] h-[23rem] lg:h-[18rem] rounded-2xl border-none bg-white shadow-[10px_10px_2px_rgba(82,82,82,0.6)] dark:bg-[#525252] dark:shadow-[10px_10px_2px_rgba(82,82,82,0.5)]">
           {" "}
           <Card className="flex flex-col p-2 m-2">
             <Card.Body>
@@ -33,7 +33,10 @@ const Profile = () => {
                   : profileTr.basicInfo}
               </Card.Title>
               <div className="flex flex-row gap-2 font-inter ">
-                <Card.Subtitle className="mb-2 text-muted w-[12rem] my-3 p-2 font-semibold text-lg tracking-[1%] ">
+                <Card.Subtitle
+                  className="mb-2 text-muted w-[12rem] my-3 p-2  text-lg tracking-[1%] "
+                  style={{ fontFamily: "font-semibold" }}
+                >
                   <p>
                     {language === TURKCE ? profileEng.date : profileTr.date}
                   </p>
@@ -47,7 +50,10 @@ const Profile = () => {
                   </p>
                 </Card.Subtitle>
                 <span> </span>
-                <Card.Text className="w-[25rem] my-3 py-2 font-normal text-lg leading-[28px] tracking-[1%] font-inter">
+                <Card.Text
+                  className="w-[25rem] my-3 py-2 font-normal text-lg leading-[28px] tracking-[1%] "
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
                   <p>
                     {language === TURKCE
                       ? profileEng.dateDetail
@@ -73,16 +79,16 @@ const Profile = () => {
             </Card.Body>
           </Card>
         </div>
-        <div className="flex flex-col w-[90%] md:w-[50%] h-[18rem] mt-5">
+        <div className="flex flex-col  h-[18rem] mt-5 ml-3 md:ml-0">
           <h3
             style={{ fontFamily: "Playfair Display" }}
-            className="text-2xl  font-bold leading-[31.99px] tracking-[1%] pb-5"
+            className="text-2xl font-bold leading-[31.99px] tracking-[1%] pb-5"
           >
             {" "}
             {language === TURKCE ? profileEng.about : profileTr.about}
           </h3>
           <div
-            className="text-lg font-normal leading-[27px] tracking-[1%] "
+            className="text-sm lg:text-lg font-normal leading-[27px] tracking-[1%] "
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             <p>

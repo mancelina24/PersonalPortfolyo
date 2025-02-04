@@ -28,7 +28,7 @@ const Projects = () => {
           </h1>
         </div>
 
-        <div className="w-[90%] md:w-[70%]">
+        <div className="w-[90%] lg:w-[70%]">
           <Card className="flex flex-col md:flex-row gap-20 h-auto ">
             {selectedProjects.map((desc) => (
               <Card.Body
