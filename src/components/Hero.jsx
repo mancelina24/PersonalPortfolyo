@@ -10,7 +10,7 @@ const Hero = () => {
   const { language, darkMode } = useContext(UserContext);
   return (
     <main
-      className={`h-[950px] md:h-[738px] flex justify-center flex-col ${
+      className={` relative h-[950px] md:h-[738px] flex justify-center flex-col ${
         darkMode
           ? "dark:bg-[#2A262B] dark:text-white"
           : "bg-[#f4f4f4] text-black"
@@ -19,7 +19,7 @@ const Hero = () => {
       <div>
         <Header />
       </div>
-      <div className="flex flex-col mt-4 ml-8 lg:ml-0 md:mt-0 md:flex-row justify-center gap-20  ">
+      <div className=" flex flex-col mt-4 ml-8 lg:ml-0 md:mt-0 md:flex-row justify-center gap-20  ">
         <div>
           <div style={{ fontFamily: "Inter, sans-serif" }}>
             <div>
