@@ -24,7 +24,10 @@ const Hero = () => {
           <div className="font-inter ">
             <div>
               {" "}
-              <p className=" font-inter text-[1.875rem]  leading-[2.27 rem] tracking-[10%]">
+              <p
+                className=" font-inter text-[1.875rem]  leading-[2.27 rem] tracking-[10%]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
                 {language === TURKCE ? heroEng.heroTitle : heroTr.heroTitle}
               </p>
             </div>

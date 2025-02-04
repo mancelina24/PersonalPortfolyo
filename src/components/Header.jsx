@@ -12,8 +12,7 @@ const Header = () => {
     useContext(UserContext);
   return (
     <header className="flex flex-row justify-end items-center bg-none pr-10">
-      <div className="flex cursor-pointer">
-        <label>{themeName}</label>
+      <div className="flex cursor-pointer mr-4">
         <Switch
           {...label}
           checked={darkMode}
@@ -24,24 +23,23 @@ const Header = () => {
             padding: 0,
             display: "flex",
             "& .MuiSwitch-thumb": {
-              backgroundColor: /*darkMode ? "#8F88FF" :*/ "#FFE86E", // Thumb (circle) color change
+              backgroundColor: "#FFE86E",
               width: 15, // Thumb (circle) width
-              height: 15, // Thumb (circle) height
-              //transform: "translateX(15px)", // Slightly shift the thumb for better alignment
-              transform: "translateY(-7px)", // Slightly shift the thumb for better alignment
+              height: 16, // Thumb (circle) height
+              transform: "translateY(-6px)",
             },
-            // "& .MuiSwitch-switchBase.Mui-checked": {
-            //   transform: "translateY(2px)",
-            // },
+
             "& .MuiSwitch-track": {
-              backgroundColor: darkMode ? "red" : "#8F88FF", // Track (main background) color change
+              backgroundColor: darkMode ? "red" : "#EA2678",
               borderRadius: "9999px", // Keep the track rounded
-              width: 60, // Thumb (circle) width
-              height: 20, // Thumb (circle) height
+              width: 55, // Thumb (circle) width
+              height: 24, // Thumb (circle) height
             },
           }}
         />
+        <label className="ml-2">{themeName}</label>
       </div>
+      <span className="font-bold pr-4"> | </span>
       <div className="flex flex-row">
         <label onClick={languageChange}>
           {language === TURKCE

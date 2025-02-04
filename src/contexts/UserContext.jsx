@@ -2,6 +2,8 @@ import { createContext, useEffect, useState } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { ENGLISH, toggleLanguageEng } from "../api/dataEng";
 import { TURKCE, toggleLanguageTr } from "../api/dataTr";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 export const UserContext = createContext();
 
@@ -22,12 +24,19 @@ export default function UserContextProvider({ children }) {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
     setThemeName(updateThemeName(newDarkMode, language));
+
+    toast.success(`Theme changed to ${darkMode ? "Light" : "Dark"} mode!`, {});
   };
 
   const languageChange = () => {
     const newLanguage = language === TURKCE ? ENGLISH : TURKCE;
     setLanguage(newLanguage);
     setThemeName(updateThemeName(darkMode, newLanguage));
+
+    toast.success(
+      `Language changed to ${language === TURKCE ? TURKCE : ENGLISH}!`,
+      {}
+    );
   };
 
   const languageClass = language === TURKCE ? "lang-turkish" : "lang-english";
