@@ -19,14 +19,13 @@ const Hero = () => {
       <div>
         <Header />
       </div>
-      <span className=" absolute w-[111px] h-[111px] top-[-55px] left-[421px] bg-[#D9D9D9] rounded-full"></span>
-      <span className=" absolute w-[148px] h-[31px] top-[247px] left-[162px] bg-[#E92577] rounded-e-sm z-0 "></span>
-      <span className=" absolute w-[217px] h-[59px] top-[536px] left-[1316px] bg-[#EA2678] rounded-4xl "></span>
-      <span className=" absolute w-[121px] h-[121px] top-[678px] left-[1038px] bg-transparent border-[21px] border-[#D9d9d9] rounded-full"></span>
+      {/* <span className=" absolute w-25 h-25 top-[-55px] left-[200px] md:left-[421px] bg-[#D9D9D9] rounded-full"></span>
+      <span className=" absolute w-[148px] h-[31px] top-[180px] md:top-[247px] left-[20px] lg:left-[162px] bg-[#E92577] rounded-e-sm z-0"></span>
+      <span className=" absolute w-[217px] h-[59px] top-[536px] left-[700px] lg:left-[1316px] bg-[#EA2678] rounded-4xl "></span>
+      <span className=" absolute w-30 h-30 top-[900px] md:top-[678px] left-[200px] md:left-[400px] lg:left-[1038px] bg-transparent border-[21px] border-[#D9d9d9] rounded-full"></span>
       <span className=" absolute w-[181px] h-[49px] top-[1133px] left-[-70px] bg-[#525252] rounded-4xl "></span>
-      <span className=" absolute w-[121px] h-[121px] top-[1198px] left-[1362px] bg-transparent border-[21px] border-[#EA2678] rounded-full"></span>
-      <span className=" absolute w-[90px] h-[18px] top-[1435px] left-[748px] bg-[#E92577] rounded-e-sm z-0 "></span>
-      <span className=" absolute w-[148px] h-[31px] top-[247px] left-[162px] bg-[#E92577] rounded-e-sm z-0 "></span>
+      <span className=" absolute w-30 h-30 top-[1198px] left-[700px] lg:left-[1362px] bg-transparent border-[21px] border-[#EA2678] rounded-full"></span> */}
+
       <div className=" flex flex-col mt-4 ml-8 lg:ml-0 md:mt-0 md:flex-row justify-center gap-20  z-10 ">
         <div>
           <div style={{ fontFamily: "Inter, sans-serif" }}>
