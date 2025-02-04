@@ -80,10 +80,9 @@ export const profileEng = {
   city: "City",
   cityDetail: "İstanbul",
   uni: "Education Status",
-  uniDetail1:
-    "Marmara University, Inovation and Startup Economy, Master Degree",
+  uniDetail1: "Marmara Univ., Inovation and Startup Economy, Master Degree",
   uniDetail2: "Yıldız Technical University, Map Engineer, Bachelor's Degree",
-  prefer: "Preferred Role",
+  prefer: "Role",
   preferDetail: "Frontend Developer",
   about: "About Me",
   aboutText1:

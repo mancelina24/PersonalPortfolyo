@@ -19,7 +19,7 @@ const Hero = () => {
       <div>
         <Header />
       </div>
-      <div className="flex flex-row justify-center">
+      <div className="flex flex-row justify-center gap-20">
         <div>
           <div className="font-inter ">
             <div>
@@ -29,8 +29,11 @@ const Hero = () => {
               </p>
             </div>
             <br />
-            <div className="w-[666px] h-[256px] ">
-              <p className=" font-inter text-[2.625rem] leading-[4 rem] tracking-[1%]">
+            <div className="w-[630px] ">
+              <p
+                className="text-[2.625rem] leading-[4 rem] tracking-[1%]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
                 {" "}
                 {language === TURKCE ? heroEng.heroDesc : heroTr.heroDesc}
               </p>
@@ -58,7 +61,10 @@ const Hero = () => {
               </div>
             </div>
             <div className="">
-              <p className="h-[18px]  font-inter font-normal text-[1.125] leading-[2rem] tracking-[5%]">
+              <p
+                className="h-[18px] font-normal text-[1.125] leading-[2rem] tracking-[5%]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
                 {language === TURKCE ? (
                   <>
                     {heroEng.heroDetail1}
@@ -107,8 +113,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="my-20 rounded-sm">
-          <img src={heroTr.img} />{" "}
+        <div className="relative my-20 rounded-3xl  shadow-[-16px_-16px_2px_rgba(233,37,119,1)]">
+          <img src={heroTr.img} className="w-[341px] h-[341px] rounded-3xl " />{" "}
         </div>
       </div>
     </main>

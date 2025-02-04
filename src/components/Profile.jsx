@@ -24,13 +24,16 @@ const Profile = () => {
           {" "}
           <Card className="flex flex-col p-2 m-2">
             <Card.Body>
-              <Card.Title className="text-[#EA2678]">
+              <Card.Title
+                className="text-[#EA2678] my-2 text-2xl font-normal leading-[31.99px] tracking-[1%]"
+                style={{ fontFamily: "Playfair Display" }}
+              >
                 {language === TURKCE
                   ? profileEng.basicInfo
                   : profileTr.basicInfo}
               </Card.Title>
-              <div className="flex flex-row gap-2">
-                <Card.Subtitle className="mb-2 text-muted w-[12rem]">
+              <div className="flex flex-row gap-2 font-inter ">
+                <Card.Subtitle className="mb-2 text-muted w-[12rem] my-3 p-2 font-semibold text-lg tracking-[1%] ">
                   <p>
                     {language === TURKCE ? profileEng.date : profileTr.date}
                   </p>
@@ -44,7 +47,7 @@ const Profile = () => {
                   </p>
                 </Card.Subtitle>
                 <span> </span>
-                <Card.Text className="w-[25rem]">
+                <Card.Text className="w-[25rem] my-3 py-2 font-normal text-lg leading-[28px] tracking-[1%] font-inter">
                   <p>
                     {language === TURKCE
                       ? profileEng.dateDetail
@@ -70,15 +73,31 @@ const Profile = () => {
             </Card.Body>
           </Card>
         </div>
-        <div className="flex flex-col w-[32rem] h-[18rem]">
-          <h3> {language === TURKCE ? profileEng.about : profileTr.about}</h3>
-          <p>
-            {language === TURKCE ? profileEng.aboutText1 : profileTr.aboutText1}
-          </p>
-          <p>
+        <div className="flex flex-col w-[32rem] h-[18rem] mt-5">
+          <h3
+            style={{ fontFamily: "Playfair Display" }}
+            className="text-2xl font-normal leading-[31.99px] tracking-[1%] pb-5"
+          >
             {" "}
-            {language === TURKCE ? profileEng.aboutText2 : profileTr.aboutText2}
-          </p>
+            {language === TURKCE ? profileEng.about : profileTr.about}
+          </h3>
+          <div
+            className="text-lg font-normal leading-[27px] tracking-[1%] "
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            <p>
+              {language === TURKCE
+                ? profileEng.aboutText1
+                : profileTr.aboutText1}
+            </p>
+            <br />
+            <p>
+              {" "}
+              {language === TURKCE
+                ? profileEng.aboutText2
+                : profileTr.aboutText2}
+            </p>
+          </div>
         </div>{" "}
       </div>
     </article>
