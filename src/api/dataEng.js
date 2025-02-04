@@ -96,8 +96,8 @@ export const projectsEng = {
       id: 1,
       title: "Pizza Project",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-      github: "https://github.com/",
-      goto: "...",
+      github: "https://github.com/mancelina24/Login-proje",
+      goto: "https://fsweb-s8-challenge-pizza-amber.vercel.app",
       heading: "Technological Pizza",
 
       teknologies: [
@@ -114,8 +114,8 @@ export const projectsEng = {
       id: 2,
       title: "Login Form",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-      github: "https://github.com",
-      goto: "https://dinamik-menu./",
+      github: "https://github.com/mancelina24/Login-proje",
+      goto: "https://login-proje.vercel.app",
       teknologies: ["React", "Axios", "Router", "Css", "Vercel"],
       img: r2,
     },

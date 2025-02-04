@@ -7,7 +7,7 @@ const Footer = () => {
   const { language } = useContext(UserContext);
 
   return (
-    <footer className="h-[137px]  top-[2777px] flex flex-row justify-center items-center gap-10">
+    <footer className="flex flex-row justify-center items-center gap-10 mt-8">
       <div
         className="dark:text-white  
   text-[#0A0A14] text-[42px] leading-[63px] tracking-[1%] font-inter font-medium text-right 

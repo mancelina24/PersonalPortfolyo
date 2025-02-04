@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { UserContext } from "../contexts/UserContext.jsx";
+import Card from "react-bootstrap/Card";
 
 const Profile = () => {
   const { language, darkMode } = useContext(UserContext);
@@ -11,9 +12,23 @@ const Profile = () => {
           : "bg-[#f4f4f4] text-black"
       }`}
     >
-      <h1>Profile</h1>
+      <h1> {language === TURKCE ? profileEng.profile : profileTr.profile}</h1>
       <div>
-        <div>Basic Information</div>
+        <div>
+          {" "}
+          <Card style={{ width: "18rem" }}>
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                Card Subtitle
+              </Card.Subtitle>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
         <div>About Me</div>{" "}
       </div>
     </article>
