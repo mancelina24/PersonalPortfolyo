@@ -12,8 +12,8 @@ const Header = () => {
     useContext(UserContext);
   return (
     <header className="relative">
-      <div className=" absolute left-250 flex bg-none border-none">
-        <div className="flex flex-row cursor-pointer pr-4 font-bold">
+      <div className=" absolute left-230 flex bg-none border-none sm:w-[100%]">
+        <div className="flex flex-row cursor-pointer pr-4 font-bold  ">
           <Switch
             {...label}
             checked={darkMode}
@@ -46,8 +46,9 @@ const Header = () => {
             <span className="text-[#EA2678] font-bold">
               {language === TURKCE ? languageEng.tr + languageEng.ekTr : ""}
             </span>
-
-            {language === TURKCE ? "" : languageTr.ekEng + languageTr.eng}
+            <span className="text-[#EA2678] font-bold">
+              {language === TURKCE ? "" : languageTr.ekEng + languageTr.eng}
+            </span>
           </label>
         </div>
       </div>

@@ -7,10 +7,10 @@ const Footer = () => {
   const { language } = useContext(UserContext);
 
   return (
-    <footer className="flex flex-row justify-center items-center gap-10 mt-8">
+    <footer className="flex flex-col md:flex-row justify-center items-center gap-10 mt-8">
       <div
         className="dark:text-white  
-  text-[#0A0A14] text-[42px] leading-[63px] tracking-[1%] font-inter font-medium text-right 
+  text-[#0A0A14] text-3xl md:text-[42px] leading-[63px] tracking-[1%] font-inter font-medium text-right 
  "
       >
         <p>{language === TURKCE ? footerEng.text1 : footerTr.text1}</p>

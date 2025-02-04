@@ -15,7 +15,7 @@ const Projects = () => {
 
   return (
     <section
-      className={`h-[1315px] flex flex-col justify-center  ${
+      className={`h-[2250px] md:h-[1315px] flex flex-col justify-center  ${
         darkMode
           ? "dark:bg-[#484148] dark:text-[#f4f4f4]"
           : "bg-white text-black"
@@ -23,13 +23,13 @@ const Projects = () => {
     >
       <div className="flex flex-col items-center gap-5">
         <div>
-          <h1 className="text-5xl leading-[58.09px] tracking-[1%] font-inter font-medium text-center ">
+          <h1 className="text-3xl md:text-5xl leading-[58.09px] tracking-[1%] font-inter font-medium text-center ">
             {language === TURKCE ? projectsEng.title : projectsTr.title}
           </h1>
         </div>
 
-        <div className="w-[45%]">
-          <Card className="flex flex-row gap-20 h-auto ">
+        <div className="w-[90%] md:w-[70%]">
+          <Card className="flex flex-col md:flex-row gap-20 h-auto ">
             {selectedProjects.map((desc) => (
               <Card.Body
                 key={desc.id}

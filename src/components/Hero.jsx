@@ -19,7 +19,7 @@ const Hero = () => {
       <div>
         <Header />
       </div>
-      <div className="flex flex-row justify-center gap-20">
+      <div className="flex md:flex-row justify-center gap-20 ">
         <div>
           <div className="font-inter ">
             <div>

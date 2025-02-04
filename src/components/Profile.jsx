@@ -9,23 +9,23 @@ const Profile = () => {
   const { language, darkMode } = useContext(UserContext);
   return (
     <article
-      className={`h-[546px] flex flex-col justify-center items-center gap-5 ${
+      className={`h-[800px] md:h-[546px] flex flex-col justify-center items-center gap-5 ${
         darkMode
           ? "dark:bg-[#2A262B] dark:text-white"
           : "bg-[#f4f4f4] text-black"
       }`}
     >
-      <h1 className="text-5xl leading-[58.09px] tracking-[1%] font-inter font-medium text-center ">
+      <h1 className="text-3xl md:text-5xl leading-[58.09px] tracking-[1%] font-inter font-medium text-center ">
         {" "}
         {language === TURKCE ? profileEng.profile : profileTr.profile}
       </h1>
-      <div className="flex flex-row w-[70%] gap-15">
-        <div className="relative flex flex-col w-[50%] h-[18rem] rounded-2xl border-none bg-white shadow-[10px_10px_2px_rgba(82,82,82,0.6)] dark:bg-[#525252] dark:shadow-[10px_10px_2px_rgba(82,82,82,0.5)]">
+      <div className="flex flex-col md:flex-row w-[90%] md:w-[70%] gap-15">
+        <div className="relative flex flex-col w-[90%] md:w-[50%] h-[18rem] rounded-2xl border-none bg-white shadow-[10px_10px_2px_rgba(82,82,82,0.6)] dark:bg-[#525252] dark:shadow-[10px_10px_2px_rgba(82,82,82,0.5)]">
           {" "}
           <Card className="flex flex-col p-2 m-2">
             <Card.Body>
               <Card.Title
-                className="text-[#EA2678] my-2 text-2xl font-normal leading-[31.99px] tracking-[1%]"
+                className="text-[#EA2678] my-2 text-2xl font-bold leading-[31.99px] tracking-[1%]"
                 style={{ fontFamily: "Playfair Display" }}
               >
                 {language === TURKCE
@@ -73,10 +73,10 @@ const Profile = () => {
             </Card.Body>
           </Card>
         </div>
-        <div className="flex flex-col w-[50%] h-[18rem] mt-5">
+        <div className="flex flex-col w-[90%] md:w-[50%] h-[18rem] mt-5">
           <h3
             style={{ fontFamily: "Playfair Display" }}
-            className="text-2xl font-normal leading-[31.99px] tracking-[1%] pb-5"
+            className="text-2xl  font-bold leading-[31.99px] tracking-[1%] pb-5"
           >
             {" "}
             {language === TURKCE ? profileEng.about : profileTr.about}

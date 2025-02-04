@@ -3,8 +3,7 @@ import { UserContext } from "../contexts/UserContext.jsx";
 import { TURKCE, skills } from "../api/dataTr.js";
 
 const Skills = () => {
-  const { language, darkMode, languageClass, darkModeClass } =
-    useContext(UserContext);
+  const { language, darkMode } = useContext(UserContext);
   return (
     <section
       className={`h-[497px] flex flex-col justify-center items-center gap-8 ${
@@ -14,12 +13,15 @@ const Skills = () => {
       }`}
     >
       <div>
-        <p className="text-5xl leading-[58.09px] tracking-[1%] font-inter font-medium text-center ">
+        <p
+          className=" text-3xl md:text-5xl leading-[58.09px] tracking-[1%]  font-medium text-center "
+          style={{ fontFamily: "Inter, sans-serif" }}
+        >
           {" "}
           {language === TURKCE ? "Skills" : "Yetenekler"}
         </p>
       </div>
-      <figure className="flex flex-row gap-[35px]">
+      <figure className="grid grid-cols-2 gap:2 md:flex md:flex-row md:gap-[35px]">
         {skills.desc.map((skill) => (
           <div
             key={skill.id}
