@@ -75,8 +75,8 @@ export const skills = {
 export const profileEng = {
   profile: "Profile",
   basicInfo: "Basic information",
-  birthday: "Birthday",
-  birthdayDetail: "19.05.1980",
+  date: "Birthday",
+  dateDetail: "19.05.1980",
   city: "City",
   cityDetail: "İstanbul",
   uni: "Education Status",
@@ -84,10 +84,12 @@ export const profileEng = {
     "Marmara University, Inovation and Startup Economy, Master Degree",
   uniDetail2: "Yıldız Technical University, Map Engineer, Bachelor's Degree",
   prefer: "Preferred Role",
-  preferD: "Frontend Developer",
-  aboutH: "About Me",
-  aboutText1: "dfgdfgdfhdfhfhfghlşfjlhjfşhjfhkfjşhjfşhfşhjfşlhjfşh",
-  aboutText2: "dfgdfgdfhdfhfhfghlşfjlhjfşhjfhkfjşhjfşhfşhjfşlhjfşh",
+  preferDetail: "Frontend Developer",
+  about: "About Me",
+  aboutText1:
+    "English 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+  aboutText2:
+    "English 2 Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
 };
 export const projectsEng = {
   title: "Projects",

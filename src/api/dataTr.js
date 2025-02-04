@@ -77,20 +77,22 @@ export const skills = {
 export const profileTr = {
   profile: "Profil",
   basicInfo: "Temel Bilgiler",
-  birthday: "Doğum Günü",
-  birthdayDetail: "19.05.1980",
+  date: "Doğum Tarihi",
+  dateDetail: "19.05.1980",
   city: "Şehir",
   cityDetail: "İstanbul",
   uni: "Eğitim Durumu",
   uniDetail1:
-    "Marmara Üniversitesi, İnovasyon ve Girişimcilik Ekonomisi, Yüksek Lisans",
+    "Marmara Üni., İnovasyon ve Girişimcilik Ekonomisi, Yüksek Lisans 2021",
   uniDetail2:
-    "Yıldız Teknik Üniversitesi, Jeodezi ve Fotogrametri Mühendisliği, Lisans",
-  prefer: "Tercih Edilen Rol",
-  preferD: "Frontend Geliştirici",
-  aboutH: "Hakkımda",
-  aboutText1: "dfghdfhfgh gdfgdfg",
-  aboutText2: "dfghdfhfgh gdfgdfg",
+    "Yıldız Teknik Üniversitesi, Jeodezi ve Fotogrametri Mühendisliği, Lisans 2006",
+  prefer: "Tercih",
+  preferDetail: "Frontend Geliştirici",
+  about: "Hakkımda",
+  aboutText1:
+    "Türkçe 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+  aboutText2:
+    "Türkçe 2 Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
 };
 export const projectsTr = {
   title: "Projeler",
