@@ -19,7 +19,10 @@ const Hero = () => {
       <div>
         <Header />
       </div>
-      <div className=" flex flex-col mt-4 ml-8 lg:ml-0 md:mt-0 md:flex-row justify-center gap-20  ">
+      <span className=" absolute w-[111px] h-[111px] top-[-55px] left-[421px] bg-[#D9D9D9] rounded-full"></span>
+      <span className=" absolute w-[148px] h-[31px] top-[247px] left-[162px] bg-[#E92577] rounded-e-sm z-0 "></span>
+      <span className=" absolute w-[217px] h-[59px] top-[536px] left-[1316px] bg-[#EA2678] rounded-[29.5] "></span>
+      <div className=" flex flex-col mt-4 ml-8 lg:ml-0 md:mt-0 md:flex-row justify-center gap-20  z-10 ">
         <div>
           <div style={{ fontFamily: "Inter, sans-serif" }}>
             <div>
@@ -34,7 +37,7 @@ const Hero = () => {
             <br />
             <div className="w-[90%] lg:w-[630px] ">
               <p
-                className="lg:text-[2.625rem] leading-[4 rem] tracking-[1%]"
+                className="lg:text-[2.625rem] leading-[4 rem] tracking-[1%] "
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 {" "}
