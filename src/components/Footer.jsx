@@ -9,13 +9,14 @@ const Footer = () => {
   return (
     <footer className="flex flex-col md:flex-row justify-center items-center gap-10 mt-8">
       <div
-        className="dark:text-white  
-  text-[#0A0A14] text-3xl md:text-[42px] leading-[63px] tracking-[1%] font-inter font-medium text-right 
+        className=" dark:text-white  relative
+  text-[#0A0A14] text-3xl md:text-[42px] leading-[63px] tracking-[1%] font-inter font-medium text-right z-10
  "
       >
         <p>{language === TURKCE ? footerEng.text1 : footerTr.text1}</p>
 
         <p>{language === TURKCE ? footerEng.text2 : footerTr.text2}</p>
+        {/* <span className=" absolute w-[148px] h-[31px] top-[1500px] left-[341px] bg-[#E92577] rounded-e-sm z-0 "></span> */}
       </div>
       <div className="flex flex-col justify-center items-center">
         <a
