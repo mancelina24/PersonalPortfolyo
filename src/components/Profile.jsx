@@ -19,8 +19,8 @@ const Profile = () => {
         {" "}
         {language === TURKCE ? profileEng.profile : profileTr.profile}
       </h1>
-      <div className="flex flex-row w-[45%] gap-15">
-        <div className="relative flex flex-col w-[32rem] h-[18rem] rounded-2xl border-none bg-white shadow-[10px_10px_2px_rgba(82,82,82,0.6)] dark:bg-[#525252] dark:shadow-[10px_10px_2px_rgba(82,82,82,0.5)]">
+      <div className="flex flex-row w-[70%] gap-15">
+        <div className="relative flex flex-col w-[50%] h-[18rem] rounded-2xl border-none bg-white shadow-[10px_10px_2px_rgba(82,82,82,0.6)] dark:bg-[#525252] dark:shadow-[10px_10px_2px_rgba(82,82,82,0.5)]">
           {" "}
           <Card className="flex flex-col p-2 m-2">
             <Card.Body>
@@ -73,7 +73,7 @@ const Profile = () => {
             </Card.Body>
           </Card>
         </div>
-        <div className="flex flex-col w-[32rem] h-[18rem] mt-5">
+        <div className="flex flex-col w-[50%] h-[18rem] mt-5">
           <h3
             style={{ fontFamily: "Playfair Display" }}
             className="text-2xl font-normal leading-[31.99px] tracking-[1%] pb-5"

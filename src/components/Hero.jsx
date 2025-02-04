@@ -10,7 +10,7 @@ const Hero = () => {
   const { language, darkMode } = useContext(UserContext);
   return (
     <main
-      className={` relative h-[738px] flex justify-center flex-col ${
+      className={`h-[738px] flex justify-center flex-col ${
         darkMode
           ? "dark:bg-[#2A262B] dark:text-white"
           : "bg-[#f4f4f4] text-black"
