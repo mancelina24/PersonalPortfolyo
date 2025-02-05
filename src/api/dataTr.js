@@ -113,7 +113,7 @@ export const projectsTr = {
       title: "Login olma Formu",
       desc: "Türkçe Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
       github: "https://github.com/mancelina24/Login-proje",
-      goto: "https://login-proje.vercel.app",
+      goto: "https://login-proje-ncb65nuag-feyzas-projects-c9e5986b.vercel.app",
       teknologies: ["React", "Axios", "Router", "HTML", "Vercel"],
       img: r2,
     },

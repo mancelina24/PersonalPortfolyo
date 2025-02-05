@@ -3,7 +3,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import { ENGLISH, toggleLanguageEng } from "../api/dataEng";
 import { TURKCE, toggleLanguageTr } from "../api/dataTr";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 export const UserContext = createContext();
 

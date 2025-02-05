@@ -39,10 +39,7 @@ const Projects = () => {
         <div className="w-[90%] lg:w-[70%]">
           <Card className="flex flex-col md:flex-row gap-20 h-auto ">
             {selectedProjects.map((desc, i) => (
-              <Card.Body
-                key={desc.i}
-                className={`p-8 rounded-3xl" ${CardColor(i)}`}
-              >
+              <Card.Body key={i} className={`p-8 rounded-3xl" ${CardColor(i)}`}>
                 <Card.Title
                   className="text-3xl my-8 font-bold"
                   style={{

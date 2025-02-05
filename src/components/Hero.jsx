@@ -6,8 +6,29 @@ import Header from "./Header.jsx";
 import { heroEng } from "../api/dataEng.js";
 import { TURKCE, heroTr } from "../api/dataTr.js";
 
+import { useQuery } from "@tanstack/react-query";
+import { queries } from "../api/queries.js";
+
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Hero = () => {
   const { language, darkMode } = useContext(UserContext);
+
+  const { data, error, isLoading } = useQuery({
+    queryKey: ["data"],
+    queryFn: queries,
+  });
+  if (isLoading) {
+    toast.info(`Loading...`);
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    toast.error(`There are some problem`, { autoClose: 1000 });
+    return <div>There are some problem: {error.message}</div>;
+  }
+
   return (
     <main
       className={` relative h-[950px] md:h-[738px] flex justify-center flex-col ${
