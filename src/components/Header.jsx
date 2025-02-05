@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { UserContext } from "../contexts/UserContext.jsx";
-import { ENGLISH, languageEng } from "../api/dataEng.js";
+import { languageEng } from "../api/dataEng.js";
 import { TURKCE, languageTr } from "../api/dataTr.js";
 
 import Switch from "@mui/material/Switch";

@@ -1,4 +1,9 @@
 Sprint Challenge: Kişisel Web Sitesi
+
+Loom Video
+
+https://www.loom.com/share/9d4b5b2500b042269e0e09265829dd9d?sid=ab36a372-63b5-4358-a4ee-bf9b1f7c7acf
+
 Proje Açıklaması
 Tebrikler, Frontend konularını tamamladın. Backend konularına geçmeden, şimdiye kadar öğrendiğin her konuyu kullanarak, kişisel web sayfası yapacaksın. Yaptığın siteyi kendi profil sayfanda da yayınlayacaksın. Bu senin Frontend konusunda ne seviyede olduğunu gösterecek.
 
