@@ -87,7 +87,7 @@ const Profile = () => {
             {" "}
             {language === TURKCE ? profileEng.about : profileTr.about}
           </h3>
-          <span className=" absolute w-[90px] h-[18px] top-[29px] lg:top-[1435px] left-[10px] lg:left-[748px] bg-[#E92577] rounded-e-sm z-0 "></span>
+          <span className=" absolute w-[90px] h-[18px] lg:top-[1435px] left-[10px] lg:left-[748px] bg-[#E92577] rounded-e-sm z-0 hidden"></span>
           <div
             className="text-sm lg:text-lg font-normal leading-[27px] tracking-[1%] "
             style={{ fontFamily: "Inter, sans-serif" }}

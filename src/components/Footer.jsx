@@ -16,7 +16,7 @@ const Footer = () => {
         <p>{language === TURKCE ? footerEng.text1 : footerTr.text1}</p>
 
         <p>{language === TURKCE ? footerEng.text2 : footerTr.text2}</p>
-        {/* <span className=" absolute w-[148px] h-[31px] top-[1500px] left-[341px] bg-[#E92577] rounded-e-sm z-0 "></span> */}
+        <span className=" absolute w-[148px] h-[31px] top-[1500px] left-[341px] bg-[#E92577] rounded-e-sm z-0 hidden"></span>
       </div>
       <div className="flex flex-col justify-center items-center">
         <a

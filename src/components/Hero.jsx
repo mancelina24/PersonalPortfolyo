@@ -19,12 +19,12 @@ const Hero = () => {
       <div>
         <Header />
       </div>
-      {/* <span className=" absolute w-25 h-25 top-[-55px] left-[200px] md:left-[421px] bg-[#D9D9D9] rounded-full"></span>
-      <span className=" absolute w-[148px] h-[31px] top-[180px] md:top-[247px] left-[20px] lg:left-[162px] bg-[#E92577] rounded-e-sm z-0"></span>
-      <span className=" absolute w-[217px] h-[59px] top-[536px] left-[700px] lg:left-[1316px] bg-[#EA2678] rounded-4xl "></span>
-      <span className=" absolute w-30 h-30 top-[900px] md:top-[678px] left-[200px] md:left-[400px] lg:left-[1038px] bg-transparent border-[21px] border-[#D9d9d9] rounded-full"></span>
-      <span className=" absolute w-[181px] h-[49px] top-[1133px] left-[-70px] bg-[#525252] rounded-4xl "></span>
-      <span className=" absolute w-30 h-30 top-[1198px] left-[700px] lg:left-[1362px] bg-transparent border-[21px] border-[#EA2678] rounded-full"></span> */}
+      <span className="absolute w-25 h-25 top-[-55px] left-[200px] lg:left-[421px] bg-[#D9D9D9] rounded-full lg:block hidden"></span>
+      <span className="absolute w-[148px] h-[31px] top-[180px]  md:left-[200px] bg-[#E92577] rounded-e-sm z-0 lg:block hidden"></span>
+      <span className="absolute w-[217px] h-[59px] top-[536px] lg:left-[1316px] xl:left-[2300px] bg-[#EA2678] rounded-4xl lg:block hidden"></span>
+      <span className="absolute w-30 h-30 top-[900px] md:top-[678px] left-[200px] lg:left-[1038px] bg-transparent border-[21px] border-[#D9d9d9] rounded-full lg:block hidden"></span>
+      <span className="absolute w-[181px] h-[49px] top-[1133px] left-[-70px] bg-[#525252] rounded-4xl lg:block hidden"></span>
+      <span className="absolute w-30 h-30 top-[1198px] lg:left-[1400px] bg-transparent border-[21px] border-[#EA2678] rounded-full lg:block hidden"></span>
 
       <div className=" flex flex-col mt-4 ml-8 lg:ml-0 md:mt-0 md:flex-row justify-center gap-20  z-10 ">
         <div>
@@ -127,7 +127,7 @@ const Hero = () => {
         <div className=" my-1 ml-3 mr-5 lg:ml-0 lg:mr-0 md:my-20 rounded-3xl shadow-[-8px_-8px_1px_rgba(233,37,119,1)] md:shadow-[-16px_-16px_2px_rgba(233,37,119,1)]">
           <img
             src={heroTr.img}
-            className="w-[90%] h-[80%] ml-0.5 md:ml-0 md:w-[341px] lg:h-[341px] rounded-3xl "
+            className="w-[100%] h-[100%] ml-0.5 md:ml-0 md:w-[341px] lg:h-[341px] rounded-3xl "
           />{" "}
         </div>
       </div>
